@@ -19,10 +19,10 @@
     <!-- Presentation de l'entreprise -->
     <section>
       <!-- Liens de navigation -->
-      <a href="#presentation">Acceuil</a>
-      <a href="#missions">Formations</a>
+      <a href="index.html">Acceuil</a>
+      <a href="#formations">Formations</a>
       <a href="#objectifs">Enseignants</a>
-      <a href="#formations">Inscription</a>
+      <a href="#inscriptions">Inscription</a>
       <a href="#contact">Contact</a>
       <hr />
       <!-- Autres liens de navigation -->
@@ -58,9 +58,9 @@
     <section>
       <h2>Notre mission</h2>
       <p>
-        <strong>Notre mission</strong> est de fournir des formations de qualité
-        qui répondent aux besoins évolutifs du marché du travail. Nous nous
-        engageons à développer les compétences professionnelles de nos
+        <strong><i>Notre mission</i></strong> est de fournir des formations de
+        qualité qui répondent aux besoins évolutifs du marché du travail. Nous
+        nous engageons à développer les compétences professionnelles de nos
         apprenants, en les préparant à exceller dans leurs carrières et à
         contribuer positivement à la société.
       </p>
@@ -80,7 +80,7 @@
     </section>
     <hr />
     <!-- Nos formations -->
-    <section>
+    <section id="formations">
       <h2>Nos formations</h2>
       <ol>
         <li>
@@ -139,7 +139,7 @@
     <hr />
     <!-- Les images representant une  formation -->
     <section>
-      <h2>Images</h2>
+      <h2>Images des presentations</h2>
       <img
         src="./images/centre.jpg"
         alt="Le centre"
@@ -166,7 +166,7 @@
     <!-- Les multimedias dont vidéos et audio -->
     <section>
       <!-- Les vidéos : en locale et en ligne -->
-      <h2>Vidéos</h2>
+      <h2>Vidéos des presentations</h2>
       <h3><i>Une vidéo en locale</i></h3>
       <p>
         <i>Une vidéo en locale qui représente notre centre de formation.</i>
@@ -175,7 +175,7 @@
         <source src="./videos/presentation.mp4" type="video/mp4" />
         Votre navigateur ne supporte pas la lecture de vidéos.
       </video> -->
-      <hr />
+
       <h3><i>Une vidéo en ligne</i></h3>
       <p><i>Une vidéo en ligne qui représente notre centre de formation.</i></p>
       <!-- <iframe
@@ -198,9 +198,9 @@
       ></iframe> -->
       <hr />
       <!-- L'audio -->
-      <h2>Audio</h2>
+      <h2>Audio de presentation</h2>
       <!-- <audio controls>
-        <source src="./audio/presentation.mp3" type="audio/mp3" />
+        <source src="./music/presentation.mp3" type="audio/mp3" />
         Votre navigateur ne supporte pas la lecture d'audio.
       </audio> -->
     </section>
@@ -252,12 +252,7 @@
       </table>
     </section>
     <hr />
-    <!-- Tableau de l'emploi du temps chez Afrix Global
-     
-    08h00–10h00 
-* 10h00–12h00 
-* 14h00–16h00 
-* 16h00–18h00 -->
+    <!-- Tableau de l'emploi du temps chez Afrix Global -->
     <section>
       <h2>Tableau de l'emploi du temps</h2>
       <table border="1">
@@ -272,7 +267,7 @@
         </tr>
         <tr>
           <td rowspan="4">Lundi</td>
-          <td>8h00 - 10h00</td>
+          <td>8h00–10h00</td>
           <td>Projet Web : HTML/CSS(Partie 1).</td>
           <td rowspan="4">Samy Amani</td>
         </tr>
@@ -290,7 +285,7 @@
         </tr>
         <tr>
           <td rowspan="4">Mardi</td>
-          <td>8h00 - 10h00</td>
+          <td>8h00–10h00</td>
           <td>Bases de JavaScript.</td>
           <td rowspan="4">Samy Amani</td>
         </tr>
@@ -308,7 +303,7 @@
         </tr>
         <tr>
           <td rowspan="4">Mercredi</td>
-          <td>8h00 - 10h00</td>
+          <td>8h00–10h00</td>
           <td rowspan="2">Atelier UI/UX Design.</td>
 
           <td rowspan="4">Samy Amani</td>
@@ -326,7 +321,7 @@
         </tr>
         <tr>
           <td rowspan="4">Jeudi</td>
-          <td>8h00 - 10h00</td>
+          <td>8h00–10h00</td>
           <td>Git & GitHub(Gestion de projet).</td>
           <td rowspan="4">Samy Amani</td>
         </tr>
@@ -344,7 +339,7 @@
         </tr>
         <tr>
           <td rowspan="4">Vendredi</td>
-          <td>8h00 - 10h00</td>
+          <td>8h00–10h00</td>
           <td rowspan="2">Evaluation/Examen Blanc.</td>
           <td rowspan="4">Samy Amani</td>
         </tr>
@@ -363,7 +358,7 @@
     </section>
     <hr />
     <!-- Conditions d'inscription  -->
-    <section>
+    <section id="inscriptions">
       <h2>Conditions d'inscription</h2>
       <p>
         Pour vous inscrire à nos formations, veuillez remplir le formulaire
@@ -372,7 +367,7 @@
       <!-- Les conditions d'inscription -->
       <h3>Les conditions</h3>
       <ol>
-        <li>Être âgé de 18 ans ou plus.</li>
+        <li>Être âgé de <u>18 ans</u> ou <u>plus.</u></li>
         <li>
           Avoir un niveau d'études minimum requis pour la formation choisie.
         </li>
@@ -470,15 +465,115 @@ plus adaptée.  -->
       </ol>
     </section>
     <hr />
-    <!-- Les contacts. -->
+    <!-- Le formulaire d'incription  * Nom 
+* Postnom 
+* Prénom 
+* E-mail 
+* Mot de passe 
+* Téléphone 
+* Date de naissance 
+* Âge -->
     <section>
+      <h2>Inscription à une formation</h2>
+      <form method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" required />
+        <br /><br />
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" required />
+        <br /><br />
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required />
+        <br /><br />
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" required />
+        <br /><br />
+        <label for="phone">Téléphone</label>
+        <input type="tel" id="phone" required />
+        <br /><br />
+        <label for="date">Date de naissance</label>
+        <input type="date" id="date" required />
+        <br /><br />
+        <label for="age">Âge</label>
+        <input type="number" required />
+        <br /><br />
+        <label for="genrem">
+          <input type="radio" id="genrem" name="genre" required />Masculin
+        </label>
+        <label for="genref">
+          <input type="radio" id="genref" name="genre" checked />Feminin
+        </label>
+        <br /><br />
+        <!-- Selections en cochant -->
+        <fieldset>
+          <legend><strong>Competences :</strong></legend>
+         <label><input type="checkbox" name="competences" id="html" required>HTML</label> 
+          <label><input type="checkbox" name="competences" id="css" />CSS</label>
+          <label><input type="checkbox" name="competences" id="javascript" />JavaScript</label>
+          <label><input type="checkbox" name="competences" id="python" />Python</label><br>
+          <label><input type="checkbox" name="competences" id="react" />React</label>
+          <label><input type="checkbox" name="competences" id="dataanalytics" />Data</label>
+          Analysis
+        </fieldset>
+        <br /><br />
+        <!-- Listes deroulantes -->
+        <label for="nationalite"><strong>Nationalité :</strong></label>
+        <select name="nationalite" id="nationalite" required>
+          <option value="congolaise" selected>Congolaise</option>
+          <option value="burundaise">Burundaise</option>
+          <option value="ougandaise">Ougandaise</option>
+          <option value="canadienne">Canadienne</option>
+          <option value="bresilienne">Brésilienne</option>
+          <option value="portugaise">Portugaise</option>
+        </select>
+        <br /><br />
+        <!-- Listes deroulantes de ville d'origine  -->
+        <label for="ville"><strong>Ville d'origine :</strong></label>
+        <select name="ville" id="ville" required>
+          <optgroup label="Nord-Kivu">
+            <option value="goma">Goma</option>
+            <option value="beni">Beni</option>
+            <option value="butembo">Butembo</option>
+          </optgroup>
+          <optgroup label="Sud-Kivu">
+            <option value="bukavu">Bukavu</option>
+            <option value="uvira">Uvira</option>
+          </optgroup>
+          <optgroup label="Tanganyika">
+            <option value="kalemie">Kalemie</option>
+          </optgroup>
+        </select>
+        <br /><br />
+        <!-- Listes déroulante normale en liste permettant plusieurs sélections. -->
+         <label for=""><strong>Une liste permettant plusieurs sélections :</strong></label>
+         <br>
+         <select name="" id="" multiple size="3" required>
+          <option value="">Développement Web</option>
+          <option value="">Python</option>
+          <option value="">Réseaux informatique</option>
+          <option value="">Intelligence Artificielle</option>
+          <option value="">Data Analysis</option>
+         </select>
+
+         <br><br>
+        <!-- Les boutons -->
+        <input type="reset" />
+        <input type="submit" />
+        <input type="button" value="rien faire" disabled />
+      </form>
+    </section>
+    <hr />
+    <!-- Les methodes des contacts -->
+    <section id="contact">
       <h2>Contactez-nous</h2>
       <p>
         Pour toute question ou demande d'information, n'hésitez pas à nous
         contacter via les moyens suivants :
       </p>
       <ul>
-        <li><strong>Adresse : </strong>Q/Himbi C/Goma, 269 Av. du Musée, Goma</li>
+        <li>
+          <strong>Adresse : </strong>Q/Himbi C/Goma, 269 Av. du Musée, Goma
+        </li>
         <li><strong>Téléphone : </strong>+243 975 175 099</li>
         <li>
           <strong>E-mail : </strong>

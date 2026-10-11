@@ -1,0 +1,12 @@
+Reponses aux questions :
+
+1. Pourquoi utilise-t-on `<!doctype html>` ? 
+R/ On l'utilise pourque le navigateur sache que notre site web est en HTML.
+2. À quoi sert `lang="fr"` sur la balise `<html>` ? 
+R/ il sert à dire au navigateur que notre site web est en langue Française.
+---------------------------------------------------------------------------
+**En testant mon projet :
+Erreur trouvée : je trouve aucune erreur.
+Pourquoi c’était un problème : ll n'y avait aucun problème.
+Correction effectuée : aucune correctio apporter.
+---------------------------------------------------------------------------
