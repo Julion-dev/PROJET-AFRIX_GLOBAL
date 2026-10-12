@@ -26,9 +26,9 @@
       <a href="#contact">Contact</a>
       <hr />
       <!-- Autres liens de navigation -->
-      <a href="https://www.google.com">Cherchez-nous sur Google</a>
+      <a href="https://www.google.com" target="_blank">Cherchez-nous sur Google</a>
       <br />
-      <a href="https://www.youtube.com">Retrouvez-nous sur Youtube</a>
+      <a href="https://www.youtube.com" target="_blank">Retrouvez-nous sur Youtube</a>
       <br />
       <a href="mailto:contact@afrixglobal.com">Contactez-nous par e-mail</a>
       <hr />
@@ -475,20 +475,22 @@ plus adaptée.  -->
         <label for="prenom">Prénom :</label>
         <input type="text" id="prenom" required />
         <br /><br />
-        <label for="email">E-mail</label>
+        <label for="email">E-mail :</label>
         <input type="email" id="email" required />
         <br /><br />
         <label for="password">Mot de passe :</label>
         <input type="password" id="password" required />
         <br /><br />
-        <label for="phone">Téléphone</label>
-        <input type="tel" id="phone" required />
+        <!-- Ajoute : +243 000 000 000 comme exemple dans le champ téléphone.  -->
+        <label for="phone">Téléphone :</label>
+        <input type="tel" id="phone" placeholder="+243 000 000 000" required />
         <br /><br />
-        <label for="date">Date de naissance</label>
+        <label for="date">Date de naissance :</label>
         <input type="date" id="date" required />
         <br /><br />
-        <label for="age">Âge</label>
-        <input type="number" required />
+        <!-- Le champ âge doit accepter uniquement des valeurs raisonnables.  -->
+        <label for="age">Âge :</label>
+        <input type="number" id="age" min="10" max="80"  required />
         <br /><br />
         <label for="genrem">
           <input type="radio" id="genrem" name="genre" required />Masculin
@@ -500,12 +502,41 @@ plus adaptée.  -->
         <!-- Selections en cochant -->
         <fieldset>
           <legend><strong>Competences :</strong></legend>
-         <label><input type="checkbox" name="competences" id="html" required>HTML</label> 
-          <label><input type="checkbox" name="competences" id="css" />CSS</label>
-          <label><input type="checkbox" name="competences" id="javascript" />JavaScript</label>
-          <label><input type="checkbox" name="competences" id="python" />Python</label><br>
-          <label><input type="checkbox" name="competences" id="react" />React</label>
-          <label><input type="checkbox" name="competences" id="dataanalytics" />Data</label>
+          <label
+            ><input
+              type="checkbox"
+              name="competences"
+              id="html"
+              required
+            />HTML</label
+          >
+          <label
+            ><input type="checkbox" name="competences" id="css" />CSS</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="competences"
+              id="javascript"
+            />JavaScript</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="competences"
+              id="python"
+            />Python</label
+          ><br />
+          <label
+            ><input type="checkbox" name="competences" id="react" />React</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="competences"
+              id="dataanalytics"
+            />Data</label
+          >
           Analysis
         </fieldset>
         <br /><br />
@@ -538,17 +569,36 @@ plus adaptée.  -->
         </select>
         <br /><br />
         <!-- Listes déroulante normale en liste permettant plusieurs sélections. -->
-         <label for=""><strong>Une liste permettant plusieurs sélections :</strong></label>
-         <br>
-         <select name="" id="" multiple size="3" required>
-          <option value="">Développement Web</option>
-          <option value="">Python</option>
-          <option value="">Réseaux informatique</option>
-          <option value="">Intelligence Artificielle</option>
-          <option value="">Data Analysis</option>
-         </select>
-
-         <br><br>
+        <label for="competencesd"
+          ><strong>Une liste permettant plusieurs sélections :</strong></label
+        >
+        <br />
+        <select name="competencesd" id="competencesd" multiple size="5" required>
+          <option value="developpementweb">Développement Web</option>
+          <option value="python">Python</option>
+          <option value="reseauxinformatique">Réseaux informatique</option>
+          <option value="intelligenceartificielle">Intelligence Artificielle</option>
+          <option value="dataanalysis">Data Analysis</option>
+        </select>
+        <br /><br />
+        <!-- Un champ permettant de sélectionner une photo. -->
+        <label for="file"><strong>Ajouter un profil :</strong></label>
+        <br />
+        <input type="file" id="file" accept=".txt, image/*, .pdf" />
+        <br /><br />
+        <!-- Un champ pour le message -->
+        <label for="message"
+          ><strong
+            >Pourquoi souhaitez-vous suivre cette formation ?</strong
+          ></label
+        >
+        <br />
+        <textarea id="message" rows="5" placeholder="Saisissez votre message">
+        </textarea>
+        <br /><br />
+        <!-- J’accepte les conditions d’inscription. -->
+         <input type="checkbox" id="accepted" required>J’accepte les conditions d’inscription
+        <br /><br />
         <!-- Les boutons -->
         <input type="reset" />
         <input type="submit" />
