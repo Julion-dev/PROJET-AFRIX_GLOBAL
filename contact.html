@@ -1,11 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Retour à l'acceuil</a>
+      <h1>Contactez-nous</h1>
+      <p>
+        Pour toute question ou demande d'information, n'hésitez pas à nous
+        contacter.
+      </p>
+    </header>
+    <hr />
+
+    <div>
+      <main>
+        <!-- L'adresse physique du centre. -->
+        <h2>Notre adresse</h2>
+        <address>
+          Adresse : Goma, Nord-Kivu, République démocratique du Congo<br />
+          Numero de tél. : +243 980 925 797<br />
+          email :
+          <a href="mailto:afrixglobal@gmail.com">afrixglobal@gmail.com</a>
+        </address>
+
+        <h2>Formulaire de contact</h2>
+        <p>
+          Veuillez remplir le formulaire ci-dessous pour nous envoyer un
+          message.
+        </p>
+        <form action="#" method="post">
+          <label for="nom">Nom :</label>
+          <input
+            type="text"
+            id="nom"
+            name="nom"
+            placeholder="Votre nom"
+            required
+          /><br />
+
+          <label for="email">Email :</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="votre.email@example.com"
+            required
+          /><br />
+
+          <label for="message">Message :</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="25"
+            placeholder="Saisissez votre message ici"
+            required
+          ></textarea
+          ><br />
+          <input type="submit" value="Envoyer" />
+          <input type="reset" value="Réinitialiser" />
+        </form>
+        <h3>Horaires d'ouverture :</h3>
+        <ul>
+          <li>Lundi - Vendredi : 9h00 - 17h00</li>
+          <li>Samedi : 10h00 - 14h00</li>
+        </ul>
+        <h3>Autres moyens de contact :</h3>
+        <ul>
+          <li>
+            <a href="tel:+243980925797" target="_blank"
+              >Contacter nous sur WhatsApp</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/afrixglobal" target="_blank"
+              >Suivez-nous sur Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://www.twitter.com/afrixglobal" target="_blank"
+              >Suivez-nous sur Twitter</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/afrixglobal" target="_blank"
+              >Suivez-nous sur Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@afrixglobal" target="_blank"
+              >Abonnez-vous à notre chaîne YouTube</a
+            >
+          </li>
+        </ul>
+
+        <h3>Notre emplacement :</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d473.54860482295226!2d29.198624933388796!3d-1.6678304600869085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2scd!4v1793748766804!5m2!1sfr!2scd"
+          width="500"
+          height="300"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          style="border: 0"
+        ></iframe>
+
+        <h3>Navigation vers d'autres pages :</h3>
+        <ul>
+          <li><a href="index.html">Acceuil</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="formateurs.html">Formateurs</a></li>
+        </ul>
+      </main>
+    </div>
+    <hr />
+
+    <footer>
+      <p>&copy; 2026 Afrix Global. Tous droits réservés.</p>
+    </footer>
+  </body>
 </html>

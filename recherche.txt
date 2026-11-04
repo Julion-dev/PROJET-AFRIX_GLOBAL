@@ -1,0 +1,15 @@
+LES RECHERCHES SUR INTENET:
+
+<progress> sert à afficher une barre de progression pour indiquer l'avancement d'une tâche (comme un téléchargement, ou le pourcentage de remplissage d'un formulaire par exemple). Elle possède les attributs value (la valeur actuelle) et max (la valeur maximale).
+
+<iframe> :
+Cette balise permet d'intégrer une autre page web ou un contenu externe à l'intérieur de la page actuelle. On l'utilise très souvent pour insérer une vidéo YouTube, une carte Google Maps ou un widget de réseaux sociaux dans un site.
+
+<datalist> :
+Cette balise sert à créer une liste de suggestions pour un champ de saisie (<input>). Contrairement à un <select>, l'utilisateur peut soit choisir une option proposée dans la liste déroulante, soit taper son propre texte librement.
+
+<fieldset> :
+Cette balise permet de regrouper des éléments liés à l'intérieur d'un formulaire. Elle dessine généralement un cadre autour de ces éléments pour les organiser visuellement. On l'utilise presque toujours avec la balise <legend> qui sert à donner un titre au groupe (par exemple : regrouper tous les champs d'une adresse postale).
+
+<canvas> :
+Cette balise fournit une zone de dessin (un canevas) dans la page HTML. Elle est utilisée avec du JavaScript pour dessiner des graphiques, créer des animations, ou même développer des jeux vidéo directement dans le navigateur.

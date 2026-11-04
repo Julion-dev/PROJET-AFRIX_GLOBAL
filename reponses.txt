@@ -1,12 +1,37 @@
-Reponses aux questions :
+REPONSES AUX QUESTIONS :
 
-1. Pourquoi utilise-t-on `<!doctype html>` ? 
-R/ On l'utilise pourque le navigateur sache que notre site web est en HTML.
-2. À quoi sert `lang="fr"` sur la balise `<html>` ? 
-R/ il sert à dire au navigateur que notre site web est en langue Française.
----------------------------------------------------------------------------
-**En testant mon projet :
-Erreur trouvée : je trouve aucune erreur.
-Pourquoi c’était un problème : ll n'y avait aucun problème.
-Correction effectuée : aucune correctio apporter.
----------------------------------------------------------------------------
+1. Quelle est la différence entre div et section ?
+<div> sert juste à regrouper des éléments sans aucun sens particulier. <section> a un sens (sémantique) : elle regroupe un thème précis et doit contenir un titre.
+
+2. Quelle est la différence entre section et article ?
+Un <article> est indépendant (ex: un article de blog). Une <section> fait partie d'un ensemble plus large dans la page.
+
+3. Pourquoi utilise-t-on header, main, nav et footer ?
+Pour structurer la page de façon logique. Cela aide les moteurs de recherche et les lecteurs d'écran (pour les aveugles) à comprendre l'organisation du site.
+
+4. Quelle est la différence entre id et name dans un formulaire ?
+id est un identifiant unique pour le CSS/JavaScript et les labels. name est le nom de la donnée qui sera envoyée au serveur.
+
+5. Quelle est la différence entre GET et POST ?
+GET affiche les données dans l'URL (pour les recherches). POST cache les données dans la requête (obligatoire pour les mots de passe).
+
+6. Pourquoi faut-il associer label à un champ de formulaire ?
+Pour l'accessibilité (lecteurs d'écran) et le confort : cliquer sur le texte place directement le curseur dans le champ.
+
+7. Quelle est la différence entre radio et checkbox ?
+radio permet un seul choix (ex: Homme/Femme). checkbox permet plusieurs choix (ex: choisir plusieurs compétences).
+
+8. Pourquoi utilise-t-on alt sur une image ?
+Pour afficher un texte si l'image ne charge pas, pour les lecteurs d'écran, et pour le référencement Google.
+
+9. Quelle est la différence entre un chemin relatif et une URL absolue ?
+Relatif : fichier interne à mon site (ex: images/photo.jpg). Absolu : lien externe avec l'adresse complète (ex: https://google.com/image.png).
+
+10. Quelle est la différence entre HTML et CSS ?
+HTML est la structure (le squelette, le contenu). CSS est le design (les couleurs, la mise en page).
+
+11. Pourquoi un formulaire HTML ne suffit-il pas pour une base de données ?
+Parce que le HTML tourne sur le navigateur du client. Il faut un langage serveur (ex: PHP, Node.js) pour recevoir les données et les sécuriser dans la base.
+
+12. Comment vérifier qu'une page HTML respecte les bonnes pratiques ?
+En utilisant le validateur W3C (validator.w3.org) pour vérifier le code et l'accessibilité.

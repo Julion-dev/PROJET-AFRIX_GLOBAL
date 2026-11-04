@@ -1,11 +1,265 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Julien Mastaki" />
+    <title>Incriptions</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Retour à l'acceuil</a>
+      <h1>Inscriptions</h1>
+      <p>
+        Afrix Global offre l'opportinité aux jeunes d'acceder à leurs formations
+        et evenements via une inscription en ligne.
+      </p>
+    </header>
+    <hr />
+
+    <div>
+      <main>
+        <h2>Formulaire d'inscription</h2>
+        <p>Veuillez remplirez ces champ pour participer à nos formations.</p>
+        <div>
+          <form action="#" method="post">
+            <fieldset>
+              <legend><strong>Informations personnelles :</strong></legend>
+              <label for="nom">Nom :</label
+              ><input
+                type="text"
+                placeholder="Monroe"
+                name="nom"
+                required
+              /><br />
+              <label for="postnom"> Postnom : </label>
+              <input
+                type="text"
+                placeholder="Dupont"
+                name="postnom"
+                required
+              /><br />
+              <label for="prenom"> Prénom : </label>
+              <input
+                type="text"
+                placeholder="Jean-Luc"
+                name="prenom"
+                required
+              /><br />
+              <label for="genre"> Genre : </label>
+              <input type="radio" name="genre" id="masculin" required />
+              Masculin
+              <input type="radio" name="genre" id="feminin" checked />
+              Feminin <br />
+              <label for="date"> Date de naissance : </label>
+              <input
+                type="date"
+                name="date"
+                min="1990-01-01"
+                max="2009-12-31"
+                required
+              /><br />
+              <label for="age">Age :</label>
+              <input
+                type="number"
+                min="17"
+                max="45"
+                name="age"
+                required
+              /><br />
+              <label for="nationalite">Nationalité :</label>
+              <select name="nationalite" id="nationalite" required>
+                <option value="congolaise" selected>Congolaise</option>
+                <option value="rwandaise">Rwandaise</option>
+                <option value="ougandaise">Ougandaise</option>
+                <option value="burundaise">Burundaise</option>
+              </select>
+              <br />
+              <label>Ville d'origine :</label>
+              <select name="origine" id="origine" required>
+                <optgroup label="Nord-Kivu">
+                  <option value="goma" selected>Goma</option>
+                  <option value="butembo">Butembo</option>
+                  <option value="beni">Beni</option>
+                </optgroup>
+
+                <optgroup label="Sud-Kivu">
+                  <option value="bukavu">Bukavu</option>
+                  <option value="uvira">Uvira</option>
+                </optgroup>
+
+                <optgroup label="Tanganyika">
+                  <option value="kalemie">Kalemie</option>
+                </optgroup></select
+              ><br />
+              <label for="adresse"> Adresse physique : <br /> </label>
+              <textarea
+                id="adresse"
+                name="adresse"
+                rows="1"
+                cols="55"
+                placeholder="Ex. Rue du musée, Q. Himbi,Goma, Nord-Kivu, Congo-Kinshasa "
+                required
+                maxlength="80"
+              ></textarea>
+            </fieldset>
+
+            <fieldset>
+              <legend><strong>Coordonnées</strong></legend>
+              <label for="email"> Email : </label>
+              <input
+                type="email"
+                placeholder="votre@email.com"
+                name="email"
+                id="email"
+                required
+              />
+
+              <br />
+              <label for="telephone"> Téléphone : </label>
+              <input
+                type="tel"
+                placeholder="+243 000 000 000"
+                name="telephone"
+                id="telephone"
+                required
+                maxlength="10"
+              />
+              <br />
+              <label for="telephone2"> Téléphone secondaire : </label>
+              <input
+                type="tel"
+                placeholder="+243 000 000 000"
+                name="telephone2"
+                id="telephone2"
+                required
+                maxlength="10"
+              />
+            </fieldset>
+
+            <fieldset>
+              <legend><strong>Informations académiques</strong></legend>
+              <label for="niveau"> Dernier niveau d'étude : </label>
+              <select name="niveau" id="niveau" required>
+                <option value="primaire">Primaire</option>
+                <option value="secondaire">Secondaire</option>
+                <option value="universitaire" selected>Universitaire</option>
+              </select>
+              <br />
+              <label for="etablissement"> Etablissement frequenté : </label>
+              <input
+                type="text"
+                placeholder="Ex. Université de Goma"
+                name="etablissement"
+                required
+              />
+              <br />
+              <label for="formation"> Formation souhaitée : </label>
+              <select name="formation" id="formation" required>
+                <option value="informatique" selected>Informatique</option>
+                <option value="marketing">Marketing</option>
+                <option value="finance">Finance</option>
+                <option value="gestion">Gestion</option>
+              </select>
+              <br />
+              <label for="niveau_info">
+                Niveau de connaissance en informatique :
+              </label>
+              <input
+                type="range"
+                name="niveau_info"
+                min="0"
+                max="5"
+                step="1"
+                value="1"
+                required
+              />
+            </fieldset>
+
+            <fieldset>
+              <legend><strong>Informations complementaires</strong></legend>
+              <br />
+              <label for="date_formation">
+                Date souhaitée de debut de formation :
+              </label>
+              <input
+                type="date"
+                name="date_formation"
+                id="date_formation"
+                required
+              />
+              <br />
+              <label for="horaire">Horaire preferé :</label>
+              <select name="horaire" id="horaire" required>
+                <optgroup label="Matin">
+                  <option value="matin">07h - 8h</option>
+                  <option value="apres-midi" selected>8h - 13h</option>
+                </optgroup>
+                <optgroup label="Après-midi">
+                  <option value="soir">13h - 16h</option>
+                </optgroup>
+              </select>
+              <br />
+              <label for="competences">Compétences déjà acquises :</label><br />
+              <input
+                type="checkbox"
+                name="competences"
+                value="bureautique"
+                checked
+              />
+              Bureautique
+              <input type="checkbox" name="competences" value="developpement" />
+              Développement
+              <input type="checkbox" name="competences" value="gestion" />
+              Gestion
+              <input
+                type="checkbox"
+                name="competences"
+                value="Entrepreneuriat"
+              />
+              Entrepreneuriat
+              <br />
+              <label for="motivation"> Motivation du candidat : </label><br />
+              <textarea
+                id="motivation"
+                name="motivation"
+                rows="3"
+                placeholder="Saisissez votre motivation ici..."
+              ></textarea
+              ><br />
+              <label for="profil"> Televerser votre profil : </label><br />
+              <input
+                type="file"
+                name="profil"
+                id="profil"
+                accept=".pdf,.doc,.docx,.png,.jpg"
+                required
+              />
+            </fieldset>
+
+            <fieldset>
+              <legend><strong>Validation</strong></legend>
+              <input
+                type="checkbox"
+                name="validation"
+                id="validation"
+                required
+              />
+              J’accepte les conditions d’inscription.<br />
+              <input type="submit" value="Soumettre" />
+              <input type="reset" value="Annuler" />
+            </fieldset>
+          </form>
+        </div>
+      </main>
+    </div>
+    <hr />
+
+    <footer>
+      <p>
+        &copy; <time datetime="2026">2026</time> Afrix Global, Tous droits
+        réservés.
+      </p>
+    </footer>
+  </body>
 </html>
